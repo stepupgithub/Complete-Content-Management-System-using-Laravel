@@ -38,8 +38,8 @@
      </div>
 
      <div class="form-group">
-          <label for="file">Upload Image</label>
-          <input class="form-control" type="file" name="file" id="file" placeholder="Upload your Image">
+          <label for="photo_id">Upload Image</label>
+          <input class="form-control" type="file" name="photo_id" id="photo_id" placeholder="Upload your Image">
      </div>
 
      <div class="form-group">
