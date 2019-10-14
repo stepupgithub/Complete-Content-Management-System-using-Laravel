@@ -1,4 +1,5 @@
 <?php
+use App\User;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,7 +22,8 @@ Route::auth();
 
 Route::get('/home', 'HomeController@index');
 
-Route::resource('admin/users', 'AdminUsersController');
+// Route::get('admin/users/cre', 'AdminUsersController@store');
+Route::resource('/admin/users', 'AdminUsersController');
 
 Route::get('/admin', function(){
 
