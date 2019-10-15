@@ -40,7 +40,7 @@
                <label for="is_active">Status</label>
                <select class="form-control" name="is_active" id="is_active">
                     <option value="1">Active</option>
-                    <option value="2" selected>Inactive</option>
+                    <option value="0" selected>Inactive</option>
                </select>
           </div>
 
@@ -54,11 +54,15 @@
                <input class="form-control" value="{{$user->password}}" type="password" name="password" id="password" placeholder="Enter your Password">
           </div>
 
-          <div class="form-group">
-               <input class="btn btn-primary" type="submit"  name="submit" placeholder="Create User">
+          <div class="form-group" style="display: inline-block">
+               <input class="btn btn-primary" value="Edit User" type="submit"  name="submit">
+          </div>
+          <div class="form-group" style="display: inline-block">
+               <input name="_method" type="hidden" value="DELETE">
+               <input class="btn btn-danger" value="Delete User" type="submit"  name="submit">
           </div>
 
-          </form>
+
      </div>
 </div>
 

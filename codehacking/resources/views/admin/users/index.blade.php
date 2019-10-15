@@ -3,6 +3,9 @@
 
 
 @section('content')
+@if(Session::has('deleted_user'))
+     <div class="btn btn-danger">{{session('deleted_user')}}</div>
+@endif
 
 <h1>Users</h1>
 

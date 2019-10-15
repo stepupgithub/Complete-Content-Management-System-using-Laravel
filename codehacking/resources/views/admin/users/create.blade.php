@@ -4,6 +4,7 @@
 
 <h1>Create Users</h1>
 
+<div class="container">
 <form action="/admin/users" method="POST" accept-charset="UTF-8" enctype="multipart/form-data">
      {!! csrf_field() !!}
 
@@ -33,7 +34,7 @@
           <label for="is_active">Status</label>
           <select class="form-control" name="is_active" id="is_active">
                <option value="1">Active</option>
-               <option value="2" selected>Inactive</option>
+               <option value="0" selected>Inactive</option>
           </select>
      </div>
 
@@ -52,7 +53,11 @@
      </div>
      
 </form>
+</div>
 
-@include('includes.form_error')
+<div class="container">
+     @include('includes.form_error')
+</div>
+
 
 @endsection
