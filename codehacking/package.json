@@ -1,8 +1,7 @@
 {
   "private": true,
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "laravel-elixir-webpack-official": "^1.0.10"
+    "gulp": "^3.9.1"
   },
   "dependencies": {
     "laravel-elixir": "*",

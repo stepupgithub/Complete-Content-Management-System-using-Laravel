@@ -17,7 +17,7 @@
      <div class="form-group">
           <label for="category_id">Category</label>
           <select class="form-control" name="category_id" id="category_id">
-               <option value="0" selected>Choose Option</option>
+               <option value="0" selected>Choose Category</option>
                <option value="1">PHP</option>
                <option value="2">Python</option>
                <option value="3">JavaScript</option>

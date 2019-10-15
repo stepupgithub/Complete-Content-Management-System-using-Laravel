@@ -2,7 +2,7 @@
 
 @section('content')
 
-<h1 style="padding-left: 35px">Edit Users</h1>
+<h1 style="padding-left: 35px">Edit User</h1>
 
 <div class="container">
      <div class="col-sm-3">
@@ -55,14 +55,16 @@
           </div>
 
           <div class="form-group" style="display: inline-block">
-               <input class="btn btn-primary" value="Edit User" type="submit"  name="submit">
+               <input class="btn btn-primary" value="Update User" type="submit"  name="submit">
           </div>
-          <div class="form-group" style="display: inline-block">
-               <input name="_method" type="hidden" value="DELETE">
+          </form>
+          
+          <form action="/admin/users/{{$user->id}}" method="POST" accept-charset="UTF-8" enctype="multipart/form-data">
+               {!! csrf_field() !!}
+               {!! method_field('PATCH') !!}
+               <input type="hidden" name="_method" value="delete">
                <input class="btn btn-danger" value="Delete User" type="submit"  name="submit">
-          </div>
-
-
+          </form>
      </div>
 </div>
 
