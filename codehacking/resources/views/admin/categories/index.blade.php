@@ -2,6 +2,10 @@
 
 @section('content')
 
+@if(Session::has('deleted_category'))
+     <div class="btn btn-danger">{{session('deleted_category')}}</div>
+@endif
+
 <h1 style="padding-left: 10px">Categories</h1>
 
 

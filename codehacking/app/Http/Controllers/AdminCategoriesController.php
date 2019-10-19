@@ -12,6 +12,7 @@ use App\Post;
 use App\Category;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
+use App\Http\Controllers\UsersEditRequest;
 
 class AdminCategoriesController extends Controller
 {
@@ -54,6 +55,7 @@ class AdminCategoriesController extends Controller
     public function destroy($id)
     {
         Category::findOrFail($id)->delete();
+        Session::flash('deleted_category', 'The category has been deleted');
         return redirect('/admin/categories');
     }
 }

@@ -3,14 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Http\Requests\PostsCreateRequest;
-use App\Http\Requests;
 use App\User;
 use App\Photo;
 use App\Role;
 use App\Post;
-use App\Category;
-use Illuminate\Support\Facades\Auth;
+use App\Http\Requests;
+use App\Http\Requests\UsersRequest;
+use App\Http\Requests\UsersEditRequest;
 use Illuminate\Support\Facades\Session;
 
 class AdminUsersController extends Controller
