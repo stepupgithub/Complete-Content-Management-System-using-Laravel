@@ -29,8 +29,8 @@
           <div class="form-group">
                <label for="role_id">Role</label>
                <select class="form-control" name="role_id" id="role_id">
-                    <option value="0" selected>Choose Option</option>
-                    <option value="1">Administrator</option>
+                    <option value="0">Choose Option</option>
+                    <option value="1" selected>Administrator</option>
                     <option value="2">Author</option>
                     <option value="3">Subscriber</option>
                </select>
@@ -39,8 +39,8 @@
           <div class="form-group">
                <label for="is_active">Status</label>
                <select class="form-control" name="is_active" id="is_active">
-                    <option value="1">Active</option>
-                    <option value="0" selected>Inactive</option>
+                    <option value="1" selected>Active</option>
+                    <option value="0">Inactive</option>
                </select>
           </div>
 
